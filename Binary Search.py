@@ -11,6 +11,7 @@ def binarySearch (low, high, key):
 	else: 
 		return -1
 
+print('Enter the elements in the array :- ')
 arr = [int(x) for x in input().split()] 
 arr.sort()
 key = int(input())
