@@ -25,8 +25,6 @@ class LinkedList:
         pass
 
 
-
-
 l = LinkedList()
 l.head = Node(2)
 n2 = Node(3)
