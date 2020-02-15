@@ -32,6 +32,7 @@ class LinkedList:
 
     def deletefromAnywhere(self, key):
         tmp = self.head
+        tmp1 = tmp
         while tmp.data != key:
             tmp1=tmp
             tmp = tmp.next
