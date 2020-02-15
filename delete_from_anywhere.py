@@ -39,23 +39,21 @@ class LinkedList:
         
         tmp1.next = tmp.next
         
-
-
-
-l = LinkedList()
-l.head = Node(2)
-n2 = Node(3)
-n3 = Node(4)
-n4 = Node('Debjit')
-l.head.next = n2
-n2.next = n3
-n3.next=n4
-l.printList()
-l.insertAtBeginning(-100)
-l.printList()
-l.deletefromBeginning()
-l.printList()
-l.deletefromEnd()
-l.printList()
-l.deletefromAnywhere(3)
-l.printList()
+if __name__ == '__main__':
+    l = LinkedList()
+    l.head = Node(2)
+    n2 = Node(3)
+    n3 = Node(4)
+    n4 = Node('Debjit')
+    l.head.next = n2
+    n2.next = n3
+    n3.next=n4
+    l.printList()
+    l.insertAtBeginning(-100)
+    l.printList()
+    l.deletefromBeginning()
+    l.printList()
+    l.deletefromEnd()
+    l.printList()
+    l.deletefromAnywhere(3)
+    l.printList()
