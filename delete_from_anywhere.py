@@ -21,8 +21,24 @@ class LinkedList:
         newNode.next = self.head
         self.head=newNode
 
-    def remove(self, key):
-        pass
+    def deletefromBeginning(self):
+        self.head = self.head.next
+
+    def deletefromEnd(self):
+        tmp = self.head
+        while tmp.next.next:
+            tmp = tmp.next
+        tmp.next = None
+
+    def deletefromAnywhere(self, key):
+        tmp = self.head
+        while tmp.data != key:
+            tmp1=tmp
+            tmp = tmp.next
+        
+        tmp1.next = tmp.next
+        
+
 
 
 l = LinkedList()
@@ -36,5 +52,9 @@ n3.next=n4
 l.printList()
 l.insertAtBeginning(-100)
 l.printList()
-l.remove(3)
+l.deletefromBeginning()
+l.printList()
+l.deletefromEnd()
+l.printList()
+l.deletefromAnywhere(3)
 l.printList()
