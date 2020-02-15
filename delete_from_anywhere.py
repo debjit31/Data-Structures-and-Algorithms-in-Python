@@ -36,7 +36,6 @@ class LinkedList:
         while tmp.data != key:
             tmp1=tmp
             tmp = tmp.next
-        
         tmp1.next = tmp.next
         
 if __name__ == '__main__':
