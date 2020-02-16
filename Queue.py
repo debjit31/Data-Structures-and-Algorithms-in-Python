@@ -4,7 +4,7 @@ class Queue:
         self.len = len
 
     def enqueue(self, val):
-        if len(self.queue) <= self.len:
+        if len(self.queue) < self.len:
             self.queue.append(val)
         else:
             print("Overflow")
