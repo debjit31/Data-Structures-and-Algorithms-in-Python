@@ -7,7 +7,7 @@ class Stack:
         self.stack.append(value)
 
     def pop(self):
-        if len(self.stack) <= 0:
+        if len(self.stack) == 0:
             print("Underflow!!!")
         else:
             print(self.stack.pop())
