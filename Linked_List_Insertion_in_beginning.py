@@ -1,5 +1,4 @@
 ## Insertion at begining
- 
 class Node:
     def __init__(self, data=None):
         self.data = data
