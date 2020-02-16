@@ -10,7 +10,7 @@ class Queue:
             print("Overflow")
 
     def dequeue(self):
-        if len(self.queue) <= 0:
+        if len(self.queue) == 0:
             print("Empty Queue!!!")
         else:
             print(self.queue.pop(0))
