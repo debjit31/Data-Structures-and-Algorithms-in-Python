@@ -1,4 +1,4 @@
-## INsertion at begining
+## Insertion at begining
  
 class Node:
     def __init__(self, data=None):
