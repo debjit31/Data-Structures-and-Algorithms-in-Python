@@ -21,7 +21,7 @@ class Queue:
         else:
             print("Empty Queue!!!!")
 
-q = Queue(5)
+q = Queue(4)
 for index in range(5):
     q.enqueue(index)
 q.display()
