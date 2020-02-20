@@ -1,15 +1,27 @@
-def insertionSort():
-    for i in range(1, len(a)):
-        j=i-1
-        while j >= 0 and a[i] < a[j]:
-            a[j+1] = a[j]
-            j-=1
-        a[j+1]= a[i]
+# Python program for implementation of Insertion Sort 
+
+# Function to do insertion sort 
+def insertionSort(arr): 
+
+	# Traverse through 1 to len(arr) 
+	for i in range(1, len(arr)): 
+
+		key = arr[i] 
+
+		# Move elements of arr[0..i-1], that are 
+		# greater than key, to one position ahead 
+		# of their current position 
+		j = i-1
+		while j >= 0 and key < arr[j] : 
+				arr[j + 1] = arr[j] 
+				j -= 1
+		arr[j + 1] = key 
 
 
+# Driver code to test above 
+arr = list(map(int, input().split())) 
+insertionSort(arr) 
+for i in range(len(arr)): 
+	print ("% d" % arr[i]) 
 
-if __name__ == '__main__':
-    a=[]
-    a = [int(x) for x in input().split()]
-    insertionSort()
-    print(a)
+# This code is contributed by Mohit Kumra 
